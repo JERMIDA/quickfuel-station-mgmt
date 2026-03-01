@@ -1,16 +1,16 @@
 {
-  "name": "backend",
+  "name": "quickfuel-backend",
   "version": "1.0.0",
-  "main": "index.js",
-  "type": "module",
+  "description": "QuickFuel - Fuel Queue & Reservation Management System Backend",
+  "main": "dist/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --no-warnings --loader ts-node/esm src/server.ts"
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
-  "keywords": [],
+  "keywords": ["fuel", "reservation", "queue", "supabase"],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "@supabase/supabase-js": "^2.97.0",
     "cors": "^2.8.6",
