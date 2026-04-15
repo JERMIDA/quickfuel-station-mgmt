@@ -1,0 +1,5 @@
+{
+  "name": "QuickFuel Web Dashboard",
+  "description": "Web dashboard for QuickFuel - Fuel station locator and reservation system.",
+  "requestFramePermissions": ["geolocation"]
+}
